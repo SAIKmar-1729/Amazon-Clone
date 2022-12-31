@@ -25,7 +25,7 @@ const reducer = (state, action) => {
             }
             return {
                 ...state,
-                basket: newBasketcls
+                basket: newBasket
             }
         default:
             return state;
