@@ -8,27 +8,27 @@ import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 
 function App() {
-  const [{},dispatch] = useStateValue();
-  useEffect(()=>{
+  const [{ }, dispatch] = useStateValue();
+  useEffect(() => {
     //  will only run once when the app component loads..
     auth.onAuthStateChanged(authUser => {
-      console.log('The User is >>> ',authUser);
+      console.log('The User is >>> ', authUser);
 
-      if(authUser){
+      if (authUser) {
         dispatch({
-          type:"SET_USER",
-          user:authUser
+          type: "SET_USER",
+          user: authUser
         })
-      }else{
+      } else {
         dispatch({
-          type:"SET_USER",
-          user:null
+          type: "SET_USER",
+          user: null
         })
 
       }
     })
 
-  },[])
+  }, [])
   return (
     <div className="App">
       <Routes>
