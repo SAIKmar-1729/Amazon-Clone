@@ -29,6 +29,9 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    padding: 0.5rem 3rem;
+    border-radius: 5rem;
+    border-color: #ff9900;
 }
 
 .product__price {
@@ -38,4 +41,27 @@
 .product__info {
     height: 100px;
     margin-bottom: 15px;
+    padding: 10px;
+}
+
+.product__button:hover {
+    background-color: #ff9900;
+    cursor: pointer;
+}
+
+.product:hover {
+    box-shadow: 10px 10px 15px 12px rgb(180, 177, 177);
+}
+
+.zoom {
+    padding: 10px;
+    /* background-color: green; */
+    transition: transform .2s;
+    /* width: 200px;
+    height: 200px; */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
 }

@@ -10,7 +10,7 @@ function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
 
   const handleAuthenticator = () => {
-    if (user){
+    if (user) {
       auth.signOut();
     }
   }
@@ -33,7 +33,7 @@ function Header() {
         <Link to={!user && '/login'}></Link>
         <div className="header__option"
           onClick={handleAuthenticator}>
-          <span className="header__optionOne">Hello {user?.email}</span>
+          <span className="header__optionOne">Hello {!user ? 'Guest' : user.email}</span>
           <span className="header__optionTwo">{user ? 'Sign Out' : 'Sign In'}</span>
         </div>
         <div className="header__option">
