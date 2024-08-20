@@ -1,5 +1,6 @@
 # Amazon Clone Project
 This project is an Amazon clone, which aims to replicate the basic functionality and user experience of the Amazon e-commerce platform. It provides users with the ability to browse products, add items to a cart, proceed to checkout, and make payments.
+ [Demo](https://clone-98e5f.web.app/)
 
 # Technologies Used
 * React.js: A JavaScript library for building user interfaces.
